@@ -6,7 +6,7 @@ const Button = (props) => {
 
   return (
     <button className={`px-2 py-4 bg-black 
-    text-white rounded-xl w-1/3 ${addClass} hover:bg-opacity-90`} {...buttonProps}>
+    text-white rounded-xl sm:w-1/3 w-full ${addClass} hover:bg-opacity-90`} {...buttonProps}>
                 {children}
     </button>
   )

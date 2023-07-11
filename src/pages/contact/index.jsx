@@ -32,46 +32,52 @@ const Contact = () => {
           <Title addClass={"!text-xl !font-medium text-center"}>Social Media</Title>
           <div className='mt-4 flex flex-col items-center gap-4'>
             <ul className='grid grid-cols-4 gap-4'>
-              <li className='flex gap-4 border px-2 py-2 rounded-xl
-                justify-center items-center cursor-pointer
-                bg-gradient-to-r from-yellow-500 to-pink-500'>
-                <FaInstagram className='text-3xl hover:opacity-70 
-                  cursor-pointer text-white'/>
-              </li>
-              <li className='flex gap-4 border px-2 py-2 rounded-xl
-                justify-center items-center cursor-pointer
-                bg-gradient-to-r from-cyan-500 to-blue-500'>
-                <BsTwitter className='text-3xl hover:opacity-70 
-                  cursor-pointer text-white'/>
-              </li>
-              <li className='flex gap-4 border px-2 py-2 rounded-xl
-                justify-center items-center cursor-pointer
-                bg-gradient-to-r from-blue-500 to-gray-800'>
-                <AiFillLinkedin className='text-3xl hover:opacity-70 
-                  cursor-pointer text-white'/>
-              </li>
-              <li className='flex gap-4 border px-2 py-2 rounded-xl
-                justify-center items-center cursor-pointer
-                bg-gradient-to-r from-cyan-950 to-gray-950'>
-                <BsGithub className='text-3xl hover:opacity-70 
-                  cursor-pointer text-white'/>
-              </li>
+              <a href="https://www.instagram.com/mehmetkaplan0/" target='_blank'>
+                <li className='flex gap-4 border px-2 py-2 rounded-xl
+                  justify-center items-center cursor-pointer
+                  bg-gradient-to-r from-yellow-500 to-pink-500'>
+                  <FaInstagram className='text-3xl hover:opacity-70 
+                    cursor-pointer text-white'/>
+                </li>
+              </a>
+              <a href="https://twitter.com/mehmetkaplanse" target='_blank'>
+                <li className='flex gap-4 border px-2 py-2 rounded-xl
+                  justify-center items-center cursor-pointer
+                  bg-gradient-to-r from-cyan-500 to-blue-500'>
+                  <BsTwitter className='text-3xl hover:opacity-70 
+                    cursor-pointer text-white'/>
+                </li>
+              </a>
+              <a href="https://www.linkedin.com/in/mehmet-kaplan-50583b23a/" target='_blank'>
+                <li className='flex gap-4 border px-2 py-2 rounded-xl
+                  justify-center items-center cursor-pointer
+                  bg-gradient-to-r from-blue-500 to-gray-800'>
+                  <AiFillLinkedin className='text-3xl hover:opacity-70 
+                    cursor-pointer text-white'/>
+                </li>
+              </a>
+              <a href="https://github.com/mehmetkaplanse" target='_blank'>
+                <li className='flex gap-4 border px-2 py-2 rounded-xl
+                  justify-center items-center cursor-pointer
+                  bg-gradient-to-r from-cyan-950 to-gray-950'>
+                  <BsGithub className='text-3xl hover:opacity-70 
+                    cursor-pointer text-white'/>
+                </li>
+              </a>
             </ul>
             <div className='border-b border-gray-500 w-1/4 my-4'></div>
           </div>
 
         </div>
         <Title>Leave a Message</Title>
-        <div className='mt-6 flex flex-col gap-4'>
-          <div className='grid grid-cols-2 gap-4'>
+        <div className='mt-6 flex flex-col'>
+          <div className='grid grid-cols-2 gap-4 mb-2'>
             <Input placeholder="Your Name"/>
             <Input placeholder="Your Surname"/>
           </div>
-          <Input placeholder="Email" />
-          <div className='flex justify-between items-center'>
-            <Button onClick={handleMessage}>Send</Button>   
-            <span className='sm:text-base text-xs text-green-500'>{message}</span>
-          </div>
+          <Input placeholder="Email"/>
+          <span className='sm:text-base text-xs text-green-500 text-center mt-2'>{message}</span>
+          <Button onClick={handleMessage} addClass="mt-2">Send</Button>   
         </div>
       </div>
     </div>

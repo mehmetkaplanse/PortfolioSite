@@ -5,15 +5,28 @@ import { Link } from 'react-router-dom';
 const Layout = ({children}) => {
 
   const [active, setActive] = useState(0);
-  const navs = ["About","Blog","Contact"];
+  const navs = [
+    {
+      name: "About",
+      link: "/"
+    },
+    {
+      name: "Projects",
+      link: "/projects"
+    },
+    {
+      name: "Contact",
+      link: "/contact"
+    }
+  ];
 
   return (
-    <div className='border mx-auto my-20 bg-white 
+    <div className='border mx-auto sm:my-20 my-5 bg-white 
       md:max-w-2xl rounded-2xl sm:max-w-lg max-w-sm shadow-2xl'>
         <div className='p-10 w-full'>
             {/* header */}
               <div className='flex justify-between items-center py-2'>
-                <a href="/"><h4 className='sm:text-2xl text-lg'>Mehmet Kaplan</h4></a>
+                <Link to={"/"}><h4 className='sm:text-3xl text-lg'>Mehmet Kaplan</h4></Link>
                 <span className='font-extralight sm:text-lg text-xs'>- Software Developer</span>
               </div>
               <div className='border-b mt-4'></div>
@@ -22,7 +35,7 @@ const Layout = ({children}) => {
             <div className='mt-6'>
               <ul className='flex gap-x-4 items-center'>
               {navs.map((nav, i) => (
-                <Link to={`/${nav==='About'?'':nav.toLowerCase()}`}>
+                <Link to={nav.link}>
                     <li
                     key={i}
                     className={`rounded-3xl px-2 py-1 cursor-pointer ${
@@ -30,7 +43,7 @@ const Layout = ({children}) => {
                     }`}
                     onClick={() => setActive(i)}
                     >
-                    {nav}
+                    {nav.name}
                     </li>
                 </Link>
                 ))}

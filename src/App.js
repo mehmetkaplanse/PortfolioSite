@@ -6,7 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import Layout from './components/Layout/Layout'
-import Blog from './pages/blog/index';
+import Project from './pages/project/index';
 import Contact from './pages/contact/index';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <Layout>
     <Routes>
       <Route path="/" element={<About />}></Route>
-      <Route path="/blog" element={<Blog />}></Route>
+      <Route path="/projects" element={<Project />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
     </Routes>
     </Layout>
