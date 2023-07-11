@@ -13,6 +13,9 @@ const Contact = () => {
 
   const handleMessage = () => {
     setMessage("Message sent successfully.");
+    setTimeout(() => {
+      setMessage("");
+    }, 2000);
   }
 
   return (
@@ -67,7 +70,7 @@ const Contact = () => {
           <Input placeholder="Email" />
           <div className='flex justify-between items-center'>
             <Button onClick={handleMessage}>Send</Button>   
-            <span className='sm:text-base text-sm text-green-500'>{message}</span>
+            <span className='sm:text-base text-xs text-green-500'>{message}</span>
           </div>
         </div>
       </div>
