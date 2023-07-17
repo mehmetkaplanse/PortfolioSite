@@ -3,10 +3,12 @@ import myphoto from '../../assets/images/myphoto.jpg';
 import Title from '../../components/ui/Title';
 
 
+
 const Index = () => {
 
 
-  const skills = ["Html","Css","Javascript","Tailwind","React.js","Node.js","Java","C#","MongoDB","MsSql"];
+  const skills = ["Html","Css","Javascript","Tailwind","React.js",
+          "Node.js","Java","C#",".Net Core","MongoDB","MsSql"];
 
   return (
     <div>
