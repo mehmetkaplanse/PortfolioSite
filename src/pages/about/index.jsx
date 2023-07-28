@@ -1,6 +1,8 @@
 import React from 'react'
 import myphoto from '../../assets/images/myphoto.jpg';
+import mycv from '../../assets/cv/mycv.pdf';
 import Title from '../../components/ui/Title';
+import {HiDownload} from 'react-icons/hi'
 
 
 
@@ -19,6 +21,14 @@ const Index = () => {
             and also full stack developer.
             I currently live in Mersin, TURKEY.
             </p>
+            <div className='mt-4 p-1 border bg-gray-100 inline-block text-blue-400 sm:text-base text-sm'>
+              <a href={mycv} download>
+                  <div className='flex gap-2 items-center'>
+                    <HiDownload />
+                    Download CV
+                  </div>
+              </a>
+            </div>
             <div>
                 <Title>Skills</Title>
                 <div className='mt-4 grid grid-cols-3 gap-2'>

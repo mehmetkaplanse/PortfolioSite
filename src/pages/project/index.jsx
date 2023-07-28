@@ -6,7 +6,7 @@ const Blog = () => {
   const projects = [
     {
       name: "Food Ordering",
-      link: ""
+      link: "https://github.com/mehmetkaplanse/food-ordering"
     },
     {
       name: "Pos Application",

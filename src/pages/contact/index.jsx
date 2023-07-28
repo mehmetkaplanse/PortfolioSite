@@ -79,17 +79,20 @@ const Contact = () => {
 
         </div>
         <Title>Leave a Message</Title>
-        <div className='mt-6 flex flex-col'>
-          <div className='grid grid-cols-2 gap-4 mb-2'>
-            <Input placeholder="Your Name" required/>
-            <Input placeholder="Your Surname" required/>
+        <form action="">
+          <div className='mt-6 flex flex-col'>
+            <div className='grid grid-cols-2 gap-4 mb-2'>
+              <Input placeholder="Your Name" required/>
+              <Input placeholder="Your Surname" required/>
+            </div>
+            <Input placeholder="Email" required/>
+            <textarea name="" id="" className='border p-4 
+            outline-none rounded-xl my-2' placeholder='Your Message...'></textarea>
+            <span className='sm:text-base text-xs text-green-500 text-center my-2'>{message}</span>
+            <Button onClick={handleMessage}>Send</Button>   
           </div>
-          <Input placeholder="Email" required/>
-          <textarea name="" id="" className='border p-4 
-          outline-none rounded-xl my-2' placeholder='Your Message...'></textarea>
-          <span className='sm:text-base text-xs text-green-500 text-center my-2'>{message}</span>
-          <Button onClick={handleMessage}>Send</Button>   
-        </div>
+        </form>
+        
       </div>
     </div>
   )
