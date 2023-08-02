@@ -33,11 +33,11 @@ const Project = () => {
           {
             projects.map((proje,i) => (
               <a href={proje.link} key={i}>
-                <div className='border p-4 cursor-pointer shadow-lg bg-gradient-to-r from-blue-400 to-gray-700 
-                  rounded-xl hover:scale-105 transition-all '>
+                <div className='border p-4 cursor-pointer shadow-lg bg-gradient-to-r from-gray-400 to-gray-600 
+                  rounded-xl hover:scale-105 transition-all h-[100px]'>
                   <h4 className='font-semibold border-b inline-block mb-2 sm:text-xl text-lg'>{proje.name}</h4>
-                  <p className='text-white font-light'>
-                    İncele
+                  <p className='text-white font-semibold flex justify-end'>
+                    View
                   </p>
                 </div>
               </a>
