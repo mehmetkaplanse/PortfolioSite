@@ -1,9 +1,13 @@
 import React from 'react'
 import Title from '../../components/ui/Title'
 
-const Blog = () => {
+const Project = () => {
 
   const projects = [
+    {
+      name: "ShopMe",
+      link: "https://github.com/mehmetkaplanse/shopMe-app"
+    },
     {
       name: "Food Ordering",
       link: "https://github.com/mehmetkaplanse/food-ordering"
@@ -29,14 +33,12 @@ const Blog = () => {
           {
             projects.map((proje,i) => (
               <a href={proje.link} key={i}>
-                <div className='border p-4 cursor-pointer shadow-lg'>
-                <h4 className='font-semibold border-b inline-block text-lg mb-2'>{proje.name}</h4>
-                <p className='font-light'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Sint rerum possimus, maiores illo earum beatae molestiae 
-                  nostrum amet iure a, blanditiis ducimus? Minima nisi facilis 
-                  fugiat maxime. Fugit, ipsam similique!
-                </p>
+                <div className='border p-4 cursor-pointer shadow-lg bg-gradient-to-r from-blue-400 to-gray-700 
+                  rounded-xl hover:scale-105 transition-all '>
+                  <h4 className='font-semibold border-b inline-block mb-2 sm:text-xl text-lg'>{proje.name}</h4>
+                  <p className='text-white font-light'>
+                    İncele
+                  </p>
                 </div>
               </a>
             ))
@@ -46,4 +48,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Project
