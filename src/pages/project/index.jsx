@@ -6,11 +6,11 @@ const Project = () => {
   const projects = [
     {
       name: "ShopMe",
-      link: "https://github.com/mehmetkaplanse/shopMe-app"
+      link: "https://shopme-brown.vercel.app/"
     },
     {
       name: "Food Ordering",
-      link: "https://github.com/mehmetkaplanse/food-ordering"
+      link: "https://food-ordering-eta.vercel.app/"
     },
     {
       name: "Pos Application",

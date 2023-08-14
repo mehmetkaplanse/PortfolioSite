@@ -43,9 +43,13 @@ const Index = () => {
             </div>
           </div>
           <div className='md:flex-1 p-2 border shadow-xl mb-auto rounded-full'>
-            <img src={myphoto} alt="" 
-            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-            className='rounded-full' />
+            <div className='rounded-full overflow-hidden'>
+              <img
+                src={myphoto}
+                alt=""
+                className='object-cover w-full h-full'
+              />
+            </div>
           </div>
         </div>
     </div>
