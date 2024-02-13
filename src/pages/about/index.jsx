@@ -9,7 +9,7 @@ import {HiDownload} from 'react-icons/hi'
 const Index = () => {
 
 
-  const skills = ["Html","Css","Javascript","Tailwind","React.js",
+  const skills = ["Html","Css","Javascript","Tailwind","React.js","Vue.js",
           "Node.js","Java","C#",".Net Core","MongoDB","MsSql"];
 
   return (
