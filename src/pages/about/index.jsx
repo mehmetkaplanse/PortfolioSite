@@ -1,5 +1,5 @@
 import React from 'react'
-import myphoto from '../../assets/images/myphoto.jpg';
+import myphoto from '../../assets/images/photo2.jpg';
 import mycv from '../../assets/cv/mycv.pdf';
 import Title from '../../components/ui/Title';
 import {HiDownload} from 'react-icons/hi'
