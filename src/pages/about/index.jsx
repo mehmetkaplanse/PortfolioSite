@@ -1,5 +1,7 @@
-import React from 'react'
-import myphoto from '../../assets/images/photo2.jpg';
+import React, { useEffect, useState } from 'react'
+import photo1 from '../../assets/images/photo1.jpg';
+import photo2 from '../../assets/images/photo2.jpg';
+import photo3 from '../../assets/images/photo3.jpg';
 import mycv from '../../assets/cv/mycv.pdf';
 import Title from '../../components/ui/Title';
 import {HiDownload} from 'react-icons/hi'
@@ -8,8 +10,17 @@ import {HiDownload} from 'react-icons/hi'
 
 const Index = () => {
 
+  const photos = [photo1, photo2, photo3];
+  const [currentPhoto, setCurrentPhoto] = useState(0);
 
-  const skills = ["Html","Css","Javascript","Tailwind","React.js","Vue.js",
+  useEffect(() => {
+    setInterval(() => {
+      setCurrentPhoto((prev) => (prev+1) % photos.length);
+    }, 3000)
+  },[])
+
+
+  const skills = ["Html","Css","Javascript","Tailwind","React-Vue","Typescript",
           "Node.js","Java","C#",".Net Core","MongoDB","MsSql"];
 
   return (
@@ -34,7 +45,7 @@ const Index = () => {
                 <div className='mt-4 grid grid-cols-3 gap-2'>
                     {
                       skills.map((skill,i) => (
-                        <span className='border text-sm border-black text-center
+                        <span className='border md:text-xs text-sm border-black text-center
                         py-1 px-2 rounded-md hover:bg-gray-800 hover:text-white'
                         key={i}>{skill}</span>
                       ))
@@ -45,7 +56,7 @@ const Index = () => {
           <div className='md:flex-1 p-2 border shadow-xl mb-auto rounded-full'>
             <div className='rounded-full overflow-hidden'>
               <img
-                src={myphoto}
+                src={photos[currentPhoto]}
                 alt=""
                 className='object-cover w-full h-full'
               />
