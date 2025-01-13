@@ -10,7 +10,9 @@
     box-sizing: border-box;
 }
 
-body {
+@layer base {
+  body {
     font-family: "Poppins", sans-serif;
-    @apply bg-gray-200
+    @apply bg-gray-200 dark:bg-gray-900 transition-colors duration-200;
+  }
 }

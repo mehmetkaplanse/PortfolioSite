@@ -23,6 +23,8 @@ const Index = () => {
   const skills = ["Html","Css","Javascript","Tailwind","React-Vue","Typescript",
           "Node.js","Java","C#",".Net Core","MongoDB","MsSql"];
 
+          
+
   return (
     <div>
         <Title>About Me</Title>
@@ -32,8 +34,8 @@ const Index = () => {
             and also full stack developer.
             I currently live in Mersin, TURKEY.
             </p>
-            <div className='mt-4 p-1 border bg-gray-100 inline-block text-blue-400 sm:text-base text-sm'>
-              <a href={mycv} download>
+            <div className='mt-4 p-1 border bg-gray-100 inline-block text-blue-400 dark:text-black sm:text-sm text-sm rounded-lg shadow-md'>
+              <a href={'https://drive.google.com/drive/u/0/folders/1tvvVXZhr7EBYJpoUCj1n71RxCxVGpmHX'} target='_blank'>
                   <div className='flex gap-2 items-center'>
                     <HiDownload />
                     Download CV
@@ -45,7 +47,7 @@ const Index = () => {
                 <div className='mt-4 grid grid-cols-3 gap-2'>
                     {
                       skills.map((skill,i) => (
-                        <span className='border md:text-xs text-sm border-black text-center
+                        <span className='border md:text-xs text-sm border-black dark:border-white text-center
                         py-1 px-2 rounded-md hover:bg-gray-800 hover:text-white'
                         key={i}>{skill}</span>
                       ))

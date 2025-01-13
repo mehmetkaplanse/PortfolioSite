@@ -91,7 +91,7 @@ const Contact = () => {
               name=''
               id=''
               className='border p-4 
-            outline-none rounded-xl my-2'
+            outline-none rounded-xl my-2 dark:text-black'
               placeholder='Your Message...'
             ></textarea>
             <span className='sm:text-base text-xs text-green-500 text-center my-2'>{message}</span>
