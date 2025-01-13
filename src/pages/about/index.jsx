@@ -13,12 +13,6 @@ const Index = () => {
   const photos = [photo1, photo2, photo3];
   const [currentPhoto, setCurrentPhoto] = useState(0);
 
-  useEffect(() => {
-    setInterval(() => {
-      setCurrentPhoto((prev) => (prev+1) % photos.length);
-    }, 3000)
-  },[])
-
 
   const skills = ["Html","Css","Javascript","Tailwind","React-Vue","Typescript",
           "Node.js","Java","C#",".Net Core","MongoDB","MsSql"];
