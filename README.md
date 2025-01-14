@@ -1,4 +1,4 @@
-## Live --> (https://mehmetkaplan.vercel.app/)
+## Live : (https://mehmetkaplanse.com.tr)
 
 # Getting Started with Create React App
 
