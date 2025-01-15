@@ -3,10 +3,14 @@ import Title from '../../components/ui/Title';
 import Input from '../../components/ui/Input';
 import Button from '../../components/ui/Button';
 import { FaInstagram } from 'react-icons/fa';
-import { BsTwitter } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
+import { RiTwitterXLine } from "react-icons/ri";
+import { FaTwitter } from "react-icons/fa6";
+
+
+
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
@@ -104,15 +108,26 @@ const Contact = () => {
                   <FaInstagram className='text-3xl hover:opacity-70 cursor-pointer text-white' />
                 </li>
               </a>
-              <a href='https://twitter.com/mehmetkaplanse' target='_blank' rel="noopener noreferrer">
+              <a href='https://x.com/mehmetkaplanse' target='_blank' rel="noopener noreferrer">
                 <li
-                  className='flex gap-4 border px-2 py-2 rounded-xl
-                  justify-center items-center cursor-pointer shadow-xl
-                  bg-gradient-to-r from-cyan-500 to-blue-500
-                  hover:scale-105 transition-transform'
+                  className="flex gap-4 border border-gray-300 px-2 py-2 rounded-lg
+                  justify-center items-center cursor-pointer shadow-lg
+                  bg-gradient-to-r from-gray-400 via-gray-800 to-gray-900
+                  hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out"
                 >
-                  <BsTwitter className='text-3xl hover:opacity-70 cursor-pointer text-white' />
+
+                  {/* Custom SVG Icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 50 50"
+                    className="fill-white hover:fill-gray-200 transition-colors duration-200"
+                  >
+                    <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                  </svg>
                 </li>
+
               </a>
               <a href='https://www.linkedin.com/in/mehmet-kaplan-50583b23a/' target='_blank' rel="noopener noreferrer">
                 <li

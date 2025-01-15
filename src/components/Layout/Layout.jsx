@@ -12,7 +12,7 @@ const Layout = ({children}) => {
         <div className='p-10 w-full'>
             {/* header */}
             <div className='flex justify-between items-center py-2'>
-              <Link to={"/"}><h4 className='sm:text-3xl text-lg'>Mehmet Kaplan</h4></Link>
+              <div><h4 className='sm:text-3xl text-lg select-none drop-shadow-lg'>Mehmet Kaplan</h4></div>
               <span className='font-extralight sm:text-lg text-xs'>- Software Engineer</span>
             </div>
             <div className={`border-b mt-4 ${isDark ? 'border-gray-700' : ''}`}></div>
