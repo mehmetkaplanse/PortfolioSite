@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import photo1 from '../../assets/images/photo1.jpg';
 import photo2 from '../../assets/images/photo2.jpg';
 import photo3 from '../../assets/images/photo3.jpg';
-import mycv from '../../assets/cv/mycv.pdf';
 import Title from '../../components/ui/Title';
 import {HiDownload} from 'react-icons/hi'
 
@@ -24,7 +23,7 @@ const Index = () => {
         <Title>About Me</Title>
         <div className='flex flex-wrap-reverse mt-4 gap-6'>
           <div className='md:flex-1'>
-            <p className='font-light text-lg'>Hey! I am Mehmet, a software engineering student, 
+            <p className='font-light text-lg'>Hey! I am Mehmet, a software engineer, 
             and also full stack developer.
             I currently live in Mersin, TURKEY.
             </p>

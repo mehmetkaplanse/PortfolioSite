@@ -58,10 +58,10 @@ const Project = () => {
               <a href={project.link} key={i} target="_blank" rel="noopener noreferrer">
                 <div className={`border p-4 cursor-pointer shadow-lg 
                   bg-gradient-to-r ${project.gradient}
-                  dark:bg-gradient-to-r dark:opacity-90
+                  dark:bg-gradient-to-r dark:border-gray-700 dark:opacity-90
                   rounded-xl hover:scale-105 transition-all h-[100px]
                   group`}>
-                  <h4 className='font-semibold border-b border-black/20 dark:border-white/20 
+                  <h4 className='font-semibold border-b border-white/20 
                     inline-block mb-2 sm:text-xl text-lg text-white'>{project.name}</h4>
                   <p className='text-white font-semibold flex justify-end 
                     group-hover:translate-x-2 transition-transform'>

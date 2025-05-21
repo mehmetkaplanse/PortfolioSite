@@ -8,7 +8,7 @@ const Layout = ({children}) => {
 
   return (
     <div className={`border mx-auto sm:my-20 my-5 rounded-2xl shadow-2xl 
-      md:max-w-2xl sm:max-w-lg max-w-sm ${isDark ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+      md:max-w-2xl sm:max-w-lg max-w-sm ${isDark ? 'bg-gray-800 text-white border-gray-700' : 'bg-white text-black'}`}>
         <div className='p-10 w-full'>
             {/* header */}
             <div className='flex justify-between items-center py-2'>
